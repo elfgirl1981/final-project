@@ -6,6 +6,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new (params[:contact])
 	
 	@contact.save
-	redirect_to @article
+	redirect_to @contact
+	
+	@contact = Contact.new(params.require(:contact).permit(:name, :email, :comment))
   end
 end
