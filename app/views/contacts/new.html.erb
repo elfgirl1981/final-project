@@ -49,8 +49,9 @@
 		
     </div>
   </div>
-  
-<%= form-for :contacts do |f| %>
+
+<h1> Contact us now </h1>  
+<%= form_for :contacts, url: contacts_path do |f| %>
   <p>
     <%= f.label :name %> <br>
 	<%= f.text_field :name %>
@@ -69,5 +70,6 @@
   <p>
     <%= f.submit %>
   </p>
+  
 <% end %>
   
