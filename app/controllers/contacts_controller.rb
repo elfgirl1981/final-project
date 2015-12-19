@@ -3,6 +3,9 @@ class ContactsController < ApplicationController
   end
   
   def create
-    render plain: params[:contact].inspect
+    @contact = Contact.new (params[:contact])
+	
+	@contact.save
+	redirect_to @article
   end
 end
