@@ -34,7 +34,7 @@
   <div class="container" id="hero">
     <div class="row">   
       <div class="col-md-12 col-xs-12">  
-        <img src="images/kats-hero-crop.jpg"  alt="Cat dressed like a super hero on a city scene">
+	    <%=image_tag("images/kats-hero-crop.jpg", alt: "Cat dressed like a super hero on a city scene")%>
    	  </div>
     </div>
   </div>
@@ -93,8 +93,11 @@
     <div class="row text-center">
 	  <div class="kitties">
       <div class="col-md-12 col-xs-12">  
+	    <%=image_tag("images/kats-cat1.jpg", alt: "Cat wearing urban clothes")%>
         <img class="img-circle hidden-xs" id="first" src= "images/kats-cat1.jpg" alt= "Cat wearing urban clothes">
-	    <img class="img-circle hidden-xs" id="second" src= "images/kats-cat2.jpg" alt= "Cat wearing sunglasses and a flower lei"> 
+	    <%=image_tag("images/kats-cat2.jpg", alt: "Cat wearing sunglasses and a flower lei")%>
+		<img class="img-circle hidden-xs" id="second" src= "images/kats-cat2.jpg" alt= "Cat wearing sunglasses and a flower lei"> 
+	    <%=image_tag("images/kats-cat3.jpg", alt: "Cat wearing a jacket and a scarf")%>
         <img class="img-circle" id="third" src= "images/kats-cat3.jpg" alt="Cat wearing a jacket and a scarf">
 	  </div>
 	  </div>
@@ -160,7 +163,7 @@
   <div class="container">
     <div class="row">  
       <div class="col-md-12 col-xs-12">  
-        <img src="images/kats-map.jpg" alt= "A map to the location of the store">
+	    <%=image_tag("images/kats-map.jpg", alt: "A map to the location of the store")%>
   	  </div>
     </div>
   </div>

@@ -9,3 +9,4 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( images/kats-hero-crop.jpg, images/kats-cat1.jpg, images/kats-cat2.jpg, images/kats-cat3.jpg, images/kats-map.jpg )

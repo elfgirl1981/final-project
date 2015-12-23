@@ -1,3 +1,26 @@
+  <!--navbar-->
+ 
+  <nav>                   
+    <div class="navbar-header">
+	  <a class="navbar-brand hidden-xs" href="#">Kat's Costume Shop</a>
+        <p class="navbar-brand visible-xs col-xs-12"> <a href="#">Kat's Costume Shop</a> </p>
+    </div>
+    <div class="nav-right hidden-xs">
+      <p>ABOUT</p> 
+      <p>CONTACT</p>
+    </div>
+  </nav>	    
+  
+<!--hero cat-->
+
+  <div class="container" id="hero">
+    <div class="row">   
+      <div class="col-md-12 col-xs-12">  
+	    <%=image_tag("images/kats-hero-crop.jpg", alt: "Cat dressed like a super hero on a city scene")%>
+   	  </div>
+    </div>
+  </div>
+ 
  <div class="container" id="contact">
     <div class="row text-center well large">
       
@@ -51,7 +74,7 @@
   </div>
 
 <h1> Contact us now </h1>  
-<%= form_for :contacts, url: contacts_path do |f| %>
+<%= form_for :contact, url: contacts_path do |f| %>
   <p>
     <%= f.label :name %> <br>
 	<%= f.text_field :name %>
