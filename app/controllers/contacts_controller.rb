@@ -1,21 +1,29 @@
 class ContactsController < ApplicationController
   
+  def index
+    @contacts = Contact.all
+  end
+  
   def show 
-    @contact = Contact.find(params[:id])
+    @contacts = Contact.find(params[:id])
   end 
   
   def new
+     @contacts = Contact.new
   end
   
   def create
-    @contact = Contact.new(contact_params)
+    @contacts = Contact.new(contact_params)
 	
-	@contact.save
-	redirect_to @contact
+	if @contacts.save
+      redirect_to @contacts
+    else
+      render 'new'
+    end
   end
   
   private
     def contact_params
-	  params.require(:contact).permit(:name, :email, :comment)
+	  params.require(:contacts).permit(:name, :email, :comment)
 	end
 end
