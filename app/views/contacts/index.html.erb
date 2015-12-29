@@ -13,6 +13,10 @@
       <td class="col-md-4"><%= contact.name %></td>
       <td class="col-md-4"><%= contact.email %></td>
 	  <td class="col-md-4"><%= contact.comment %></td>
+	  <td><%= link_to 'Show', contact_path(contact) %></td>
+	  <td><%= link_to 'Destroy', contact_path(contact),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>

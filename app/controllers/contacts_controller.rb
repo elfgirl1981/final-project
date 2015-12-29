@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
   end 
   
   def new
-     @contacts = Contact.new
+    @contacts = Contact.new
   end
   
   def create
@@ -20,6 +20,13 @@ class ContactsController < ApplicationController
     else
       render 'new'
     end
+  end
+  
+  def destroy
+    @contacts = Contact.find(params[:id])
+    @contacts.destroy
+ 
+    redirect_to contact_path
   end
   
   private
