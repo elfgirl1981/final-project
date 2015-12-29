@@ -174,6 +174,7 @@ table {
 	width: 300px; 
 	margin-bottom: 80px; 
 	margin-left: 50px; 
+	margin-top: 80px; 
 }
 .mavis {
 	border: 1px solid #eeeeee;    
@@ -181,6 +182,7 @@ table {
 	padding: 30px; 
 	width: 300px; 
 	margin-left: 60px;  
+	margin-top: 80px; 
 }
 /* 3 cats */
 
@@ -236,7 +238,13 @@ table {
 	width: 300px; 
 	margin-left: 60px; 
 }
-
+#now {
+	background-color: white; 
+	padding: 30px; 
+	margin-bottom: 80px; 
+	width: 300px; 
+	margin-left: 50px; 
+}
 #contact h1 {
 	font: 700 1.875em 'PT Sans Narrow'; 
 	color: #323232;
