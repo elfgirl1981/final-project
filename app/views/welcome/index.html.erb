@@ -18,11 +18,11 @@
  
   <nav>                   
     <div class="navbar-header">
-	  <a class="navbar-brand hidden-xs" href="#">Kat's Costume Shop</a><%= link_to root_path %>
-        <p class="navbar-brand visible-xs col-xs-12"> <a href="#">Kat's Costume Shop</a> </p>
+	  <a class="navbar-brand hidden-xs" href="/">Kat's Costume Shop</a><%= link_to root_path %>
+        <p class="navbar-brand visible-xs col-xs-12"> <a href="/">Kat's Costume Shop</a> </p>
     </div>
     <div class="nav-right hidden-xs">
-      <p>ABOUT</p> 
+      <p><a href ="/about/index">ABOUT</a></p> 
       <p><a href="/contacts/new">CONTACT</a></p>
     </div>
   </nav>	    
@@ -56,53 +56,6 @@
 	  </div>
 	</div>
   </div>
-	  
-
-
-<!-- about -->  
-
-  <div class="container" id="about">
-    <div class="row container">   
-	  
-		  <div class="col-md-4 col-md-offset-2 col-xs-12">	
-			<div class="kat">
-              <h2> About Kat </h2>
-                <p>
-                  Kat is the ultimate cat lady you've always dreamed you could be. Never has a halloween gone by where her twelve cats weren't all dressed to impress.  Five years ago, she decided to  open Kat's Costume Shop to share her passion with the world.   
-                </p>
-			</div>
-		  </div>
-
-		   <div class="col-md-4 col-xs-12">
-			  <div class="mavis">
-                <h2> About Mavis </h2>
-                  <p>
-                    Mavis has been designing custom clothes for her three cats since she was fifteen years old. She   loves working on custom orders. Her cats are often roaming freely throughout the store and modeling the latest trends.
-                  </p>
-			  </div> 
-		    </div> 
-		   
-    </div>	
-  </div>
-  
-<!-- 3 round cats -->
-
-  <div class="container">
-    <div class="row text-center">
-	  <div class="kitties">
-      <div class="col-md-12 col-xs-12">  
-	    <%=image_tag("images/kats-cat1.jpg", alt: "Cat wearing urban clothes")%>
-        <img class="img-circle hidden-xs" id="first" src= "images/kats-cat1.jpg" alt= "Cat wearing urban clothes">
-	    <%=image_tag("images/kats-cat2.jpg", alt: "Cat wearing sunglasses and a flower lei")%>
-		<img class="img-circle hidden-xs" id="second" src= "images/kats-cat2.jpg" alt= "Cat wearing sunglasses and a flower lei"> 
-	    <%=image_tag("images/kats-cat3.jpg", alt: "Cat wearing a jacket and a scarf")%>
-        <img class="img-circle" id="third" src= "images/kats-cat3.jpg" alt="Cat wearing a jacket and a scarf">
-	  </div>
-	  </div>
-    </div>
-  </div>
-  
-  
  
 <!-- footer -->
 
