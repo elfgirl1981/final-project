@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|PT+Sans:400|PT+Sans+Narrow:700">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  
+  <title> Kat's Costume Shop </title>
+</head>
+  
+<body>
+
+<div class="container">
+ 
+ <!--navbar-->
+ 
+  <nav>                   
+    <div class="navbar-header">
+	  <a class="navbar-brand hidden-xs" href="/">Kat's Costume Shop</a><%= link_to root_path %>
+        <p class="navbar-brand visible-xs col-xs-12"> <a href="/">Kat's Costume Shop</a> </p>
+    </div>
+    <div class="nav-right hidden-xs">
+      <p><a href ="/about/index">ABOUT</a></p> 
+      <p><a href="/contacts/new">CONTACT</a></p>
+    </div>
+  </nav>	    
+  
+<!--hero cat-->
+
+  <div class="container" id="hero">
+    <div class="row">   
+      <div class="col-md-12 col-xs-12">  
+	    <%=image_tag("images/kats-hero-crop.jpg", alt: "Cat dressed like a super hero on a city scene")%>
+   	  </div>
+    </div>
+  </div>
+    </div>
+  </div>
+ 
+ <!-- contact -->
+ <div class="container" id="contact">
+    <div class="row text-center well large">
+      
+	  <div class="col-md-12 hidden-xs">  
+        <h1> Get In Touch </h1>
+	  </div> 
+	  
+      <div class="col-md-4 col-xs-12">
+		<div class="well" id="hours">
+	      <h2> BUSINESS HOURS </h2>
+            <h3>
+              MONDAY-FRIDAY 11am - 8pm <br>
+              SATURDAY 10am - 4pm <br>
+              SUNDAY 12pm - 4am 
+		    </h3> 
+	    </div>
+	  </div>
+		  
+	  <div class="col-md-4 col-xs-12">
+		<div class="well" id="now">
+	      <h2> CONTACT US NOW </h2>
+            <%= form_for :contacts, url: contacts_path do |f| %>
+
+            <% if @contacts.errors.any? %>
+            <div id="error_explanation">
+              <h3>
+                <%= pluralize(@contacts.errors.count, "error") %> prohibited
+                this contact from being saved:
+              </h3>
+              <ul>
+                <% @contacts.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+            <% end %>
+              </ul>
+            </div>
+          <% end %>
+  
+          <p>
+            <%= f.label :name %> <br>
+	        <%= f.text_field :name %>
+          </p>
+  
+          <p>
+            <%= f.label :email %> <br>
+	        <%= f.text_field :email %>
+          </p>
+  
+          <p>
+            <%= f.label :comment %> <br>
+        	<%= f.text_area :comment %>
+          </p>
+  
+          <p>
+            <%= f.submit %>
+          </p>
+  
+  
+        <% end %>
+		
+	    </div>
+	  </div>
+	  
+      <div class="col-md-4 col-xs-12">
+		<div class="well" id="info">
+	      <div class="row">
+		    <div class="col-md-12">
+		      <h2> CONTACT INFO </h2>
+			</div>
+                <h3>
+				
+			      <div class="col-md-3 col-xs-3">
+                    PHONE 
+			      </div>
+			      <div class="col-md-8 col-md-offset-1 col-xs-8 col-xs-offset-1">
+			        (123) 456-7890 
+			      </div> 
+			      
+				  
+                  <div class="col-md-3 col-xs-3">				  
+	                ADDRESS 
+				  </div> 
+				  <div class="col-md-8 col-md-offset-1 col-xs-8 col-xs-offset-1">
+					<a href= "#"> 1234 Imaginary Ln. <br> 
+		                          St. Louis, MO 63101</a>	
+				  </div>
+								  
+                </h3> 
+		  </div>
+		</div>
+	  </div> 
+		
+    </div>
+  </div>
+
+  <!-- Map --> 
+
+  <div class="container">
+    <div class="row">  
+      <div class="col-md-12 col-xs-12">  
+	    <%=image_tag("images/kats-map.jpg", alt: "A map to the location of the store")%>
+  	  </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+
+  <div class="container">
+    <div class="footer">
+      <h1> Kat's Costume Shop </h1>
+	</div>
+  </div>
+
+  

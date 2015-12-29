@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****************************************************/
+
+.well {
+	padding: 0; 
+	border: 0; 
+	margin: 0;
+}
+.container {
+	padding-left: 0; 
+	padding-right: 0; 
+}
+.row {
+	margin-left: 0; 
+	margin-right: 0; 
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	padding-right: 0; 
+	padding-left: 0; 
+}
+
+@media (max-width: 769px){
+   .navbar-brand {
+	   font: 700 1.5em 'PT Sans Narrow'; 
+	   text-align: center; 
+	   position: relative;
+       top: 50%;
+       transform: translateY(-50%);
+   }
+   .navbar-brand a {
+	   color: #323232
+   }
+   #third {
+	   margin-top: 60px;   
+   }
+   #hours.well {
+	   background-color: #eeeeee; 
+	   border: none; 
+   }
+   #info.well{
+	   background-color: #eeeeee; 
+	   border: none; 
+   }
+}
+
+/* navbar */
+
+
+.nav {
+	height: 80px; 
+	width: auto;
+	font: unset;  
+	position: relative;
+}
+.navbar-brand {
+	font: 700 1.5em 'PT Sans Narrow'; 
+	color: #323232; 
+    padding-top: 23px; 
+}
+.nav-right{
+	float: right;
+	margin: 0;
+    position: relative;
+    top: 50%;
+}
+.nav-right p {
+	font: 400 .9em 'PT Sans';
+	color: #323232;  	
+	float: left; 
+	padding: 30px; 
+} 
+
+/* cat hero */
+
+.col-md-12 img {
+	width:100%;
+    height:100%;
+    margin: 0; 
+}
+
+/* cattitude */
+
+.cattitude {
+	margin-top: 80px; 
+	margin-bottom: 80px; 
+}
+.cattitude h1 {
+	font: 700 1.875em 'PT Sans Narrow'; 
+	color: #323232;
+    text-align: center; 
+}
+.cattitude h3 {
+	font: 400 1em 'PT Serif';  
+	line-height: 2em; 
+	color: #323232; 
+	margin-top: 45px;
+	text-align: left; 
+}
+
+/* about */
+
+#about.well {
+	margin-right: 60px; 
+	margin-left: 30px;  
+	padding: 30px; 
+	width: 380px; 
+}
+#about h2 {
+	font: 700 1.5em "PT Sans Narrow";
+	color: #00897f;
+	text-transform: uppercase;
+	text-align: center; 
+	margin-bottom: 25px; 
+}
+#about p {
+	font: 400 .875em "PT Serif";
+	line-height: 1.75em; 
+	color: #323232; 
+	text-align: left; 
+}
+.kat {
+	border: 1px solid #eeeeee;    
+	background-color: #eeeeee;  
+    padding: 30px; 
+	margin-right: 30px; 
+	width: 300px; 
+	margin-bottom: 80px; 
+	margin-top: 80px; 
+}
+.mavis {
+	border: 1px solid #eeeeee;    
+	background-color: #eeeeee; 
+	padding: 30px; 
+	width: 300px; 
+	margin-left: 40px;  
+	margin-top: 80px; 
+}
+/* 3 cats */
+
+.kitties {
+	margin-left: 50px; 
+	height: 250px; 
+}
+#first {
+	width: 190px; 
+	
+	margin-bottom: 80px; 
+	margin-right: 55px; 
+	margin-left: -35px; 
+}
+#second {
+	width: 190px; 
+	margin-bottom: 80px;
+	margin-right: 55px; 
+}
+#third {
+	width: 190px; 
+	margin-bottom: 80px;
+}
+
+/* contact */
+
+#contact.well {
+	border: none; 
+	margin-bottom: 0; 
+	padding: 0; 
+	margin-left: 0; 
+	margin-right: 0; 
+}
+.large {
+	border: none; 
+	margin-bottom: 0; 
+	padding: 0; 
+	margin-left: 0; 
+	margin-right: 0; 
+	background-color: #eeeeee;
+}
+#hours {
+	background-color: white; 
+	padding: 30px; 
+	margin-bottom: 80px; 
+	width: 300px; 
+	margin-left: 15px; 
+}
+#info {
+	background-color: white; 
+	padding: 30px; 
+	margin-bottom: 80px; 
+	width: 300px; 
+	margin-left: 15px; 
+}
+#now {
+	background-color: white; 
+	padding: 30px; 
+	margin-bottom: 80px; 
+	width: 300px; 
+	margin-left: 15px; 
+}
+#contact h1 {
+	font: 700 1.875em 'PT Sans Narrow'; 
+	color: #323232;
+    text-align: center; 
+	margin-top: 80px; 
+	margin-bottom: 45px; 
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#contact h2 {
+	font: 700 1.5em "PT Sans Narrow";
+	text-transform: uppercase;
+	color: #00897f;
+	text-align: center; 	
+    transform: translateY(-50%);
+	padding-top: 30px;  
+}
+#contact h3 {
+	font: 400 1em "PT Serif"; 
+	line-height: 2em; 
+	color: #323232;
+	padding: 0px; 
+	text-align: left; 
+}
+#contact  p {
+	font: 400 .875em "Serif"; 
+	line-height: 1.75em; 
+	color: #323232; 
+}
+#contact a {
+	font: 700 1em "PT Serif";
+	color: #f26522;
+}
+
+/* map */
+
+
+/* footer */
+
+.footer {
+	background-color: #00897f; 
+	height: 125px; 
+}
+.footer h1 {
+	font: 700 1.25em "PT Sans Narrow"; 
+	color: #ffffff;
+	text-align: center; 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

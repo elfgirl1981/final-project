@@ -1,0 +1,27 @@
+<div class="text-center">
+<h1><mark>LISTING CONTACTS</mark></h1>
+
+<table class="col-md-12 table-bordered">
+  <tr>
+    <th class="col-md-4 text-center">Name</th>
+    <th class="col-md-4 text-center">Email</th>
+	<th class="col-md-4 text-center">Comment</th>
+  </tr>
+ 
+  <% @contacts.each do |contact| %>
+    <tr>
+      <td class="col-md-4"><%= contact.name %></td>
+      <td class="col-md-4"><%= contact.email %></td>
+	  <td class="col-md-4"><%= contact.comment %></td>
+	  <td><%= link_to 'Show', contact_path(contact) %></td>
+	  <td><%= link_to 'Destroy', contact_path(contact),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<button type="button" class="btn btn-primary-outline">
+ <%= link_to 'Back', new_contact_path %>
+</button>
+ </div>
