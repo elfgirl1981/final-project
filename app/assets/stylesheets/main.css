@@ -173,7 +173,6 @@ table {
 	margin-right: 30px; 
 	width: 300px; 
 	margin-bottom: 80px; 
-	margin-left: 50px; 
 	margin-top: 80px; 
 }
 .mavis {
@@ -181,7 +180,7 @@ table {
 	background-color: #eeeeee; 
 	padding: 30px; 
 	width: 300px; 
-	margin-left: 60px;  
+	margin-left: 40px;  
 	margin-top: 80px; 
 }
 /* 3 cats */
@@ -229,21 +228,21 @@ table {
 	padding: 30px; 
 	margin-bottom: 80px; 
 	width: 300px; 
-	margin-left: 50px; 
+	margin-left: 15px; 
 }
 #info {
 	background-color: white; 
 	padding: 30px; 
 	margin-bottom: 80px; 
 	width: 300px; 
-	margin-left: 60px; 
+	margin-left: 15px; 
 }
 #now {
 	background-color: white; 
 	padding: 30px; 
 	margin-bottom: 80px; 
 	width: 300px; 
-	margin-left: 50px; 
+	margin-left: 15px; 
 }
 #contact h1 {
 	font: 700 1.875em 'PT Sans Narrow'; 
